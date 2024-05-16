@@ -1,6 +1,27 @@
 import streamlit as st
 import requests
 
+# Egyedi CSS stílusok hozzáadása
+st.markdown("""
+    <style>
+    .main {
+        background: linear-gradient(to bottom right, #ff7f00, #000000);
+        color: white;
+    }
+    .stTextInput, .stTextArea, .stButton {
+        background-color: #292b2f;
+        color: white;
+    }
+    .stTextInput > div, .stTextArea > div {
+        border: 2px solid transparent;
+        border-radius: 3px;
+    }
+    .stTextInput > div:focus, .stTextArea > div:focus {
+        border-color: rgb(88, 101, 242);
+    }
+    </style>
+    """, unsafe_allow_html=True)
+
 # Streamlit app címe
 st.title("Discord Webhook Sender")
 st.write("A simple webhook sender for Discord")
