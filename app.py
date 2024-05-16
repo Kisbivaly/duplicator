@@ -1,28 +1,18 @@
 import streamlit as st
 import requests
 
+# Streamlit app címe
 # Egyedi CSS stílusok hozzáadása
 st.markdown("""
     <style>
     .main {
+        background: linear-gradient(to top left, #000000, #ff7f00);
         background: linear-gradient(to bottom right, #ff7f00, #000000);
         color: white;
-    }
-    .stTextInput, .stTextArea, .stButton {
-        background-color: #292b2f;
-        color: white;
-    }
-    .stTextInput > div, .stTextArea > div {
-        border: 2px solid transparent;
-        border-radius: 3px;
-    }
-    .stTextInput > div:focus, .stTextArea > div:focus {
-        border-color: rgb(88, 101, 242);
     }
     </style>
     """, unsafe_allow_html=True)
 
-# Streamlit app címe
 st.title("Discord Webhook Sender")
 st.write("A simple webhook sender for Discord")
 
@@ -53,3 +43,31 @@ if st.button("Save Webhook"):
     st.write("Webhook saved: ", webhook_link)
     st.write("Username: ", name)
     # További mentési logika itt
+import streamlit as st
+import requests
+
+# Streamlit app címe
+st.markdown("""
+    <style>
+    .main {
+        background: linear-gradient(to top left, #000000, #ff7f00);
+    .stTextInput, .stTextArea, .stButton {
+        background-color: #292b2f;
+        color: white;
+    }
+    .stTextInput > div, .stTextArea > div {
+        border: 2px solid transparent;
+        border-radius: 3px;
+    }
+    .stTextInput > div:focus, .stTextArea > div:focus {
+        border-color: rgb(88, 101, 242);
+    }
+    </style>
+    """, unsafe_allow_html=True)
+
+st.title("Dismeseg")
+# Streamlit app címe
+st.title("Discord Webhook Sender")
+st.write("A simple webhook sender for Discord")
+
+# Bemeneti mezők
