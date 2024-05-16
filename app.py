@@ -10,10 +10,6 @@ st.markdown("""
     </style>
     """, unsafe_allow_html=True)
 
-st.set_page_config(
-    page_title="Dismeseg",
-    page_icon=":robot_face:")
-
 st.title("Dismeseg")
 st.write("A simple webhook sender for Discord")
 
