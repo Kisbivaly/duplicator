@@ -58,25 +58,6 @@ st.markdown("""
     </style>
     """, unsafe_allow_html=True)
 
-# JavaScript a téma váltásához
-st.markdown("""
-    <script>
-    const currentTheme = localStorage.getItem('theme');
-    if (!currentTheme || currentTheme === 'dark') {
-        document.body.classList.add('dark');
-        localStorage.setItem('theme', 'dark');
-    } else {
-        document.body.classList.add('light');
-    }
-
-    function switchTheme() {
-        document.body.classList.toggle('light');
-        const theme = document.body.classList.contains('light') ? 'light' : 'dark';
-        localStorage.setItem('theme', theme);
-    }
-    </script>
-    """, unsafe_allow_html=True)
-
 # Streamlit app címe
 st.title("Discord Webhook Sender")
 st.write("A simple webhook sender for Discord")
@@ -108,6 +89,3 @@ if st.button("Save Webhook"):
     st.write("Webhook saved: ", webhook_link)
     st.write("Username: ", name)
     # További mentési logika itt
-
-# Téma váltó gomb hozzáadása
-st.button("Switch Theme", on_click=lambda: st.markdown("<script>switchTheme();</script>", unsafe_allow_html=True))
