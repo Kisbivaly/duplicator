@@ -1,43 +1,15 @@
 import streamlit as st
 import requests
 
-# Alkalmazás konfigurálása
-st.set_page_config(
-    page_title="Discord Webhook Sender", 
-    page_icon=":robot:", 
-    layout="centered", 
-    initial_sidebar_state="auto"
-)
-
-# Egyéni CSS stílusok hozzáadása
+# Streamlit app címe
 st.markdown("""
     <style>
-    body {
+    .main {
         background: linear-gradient(to top left, #000000, #ff7f00);
-        color: white;
-    }
-
-    .stTextInput > div > div, .stTextArea > div > div {
-        background-color: #292b2f;
-        color: white;
-    }
-
-    .stTextInput > div > div:focus, .stTextArea > div > div:focus {
-        border-color: rgb(88, 101, 242);
-    }
-
-    .stButton > button {
-        background: rgb(88, 101, 242);
-        color: white;
-    }
-
-    .stButton > button:hover {
-        opacity: 0.8;
     }
     </style>
     """, unsafe_allow_html=True)
 
-# Streamlit app címe
 st.title("Discord Webhook Sender")
 st.write("A simple webhook sender for Discord")
 
