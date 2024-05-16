@@ -12,35 +12,14 @@ st.set_page_config(
 # Egyéni CSS stílusok hozzáadása
 st.markdown("""
     <style>
-    :root {
-        --background-dark: linear-gradient(to top left, #000000, #ff7f00);
-        --background-light: linear-gradient(to bottom right, #ff7f00, #000000);
-        --input-dark: #292b2f;
-        --input-light: #777777;
-        --text-dark: #ccd5e0;
-        --text-light: #192e44;
-        --button-bg: rgb(88, 101, 242);
-        --button-hover-opacity: 0.8;
-    }
-
     body {
-        background: var(--background-dark);
-        color: var(--text-dark);
-    }
-
-    body.light {
-        background: var(--background-light);
-        color: var(--text-light);
+        background: linear-gradient(to top left, #000000, #ff7f00);
+        color: white;
     }
 
     .stTextInput > div > div, .stTextArea > div > div {
-        background-color: var(--input-dark);
-        color: var(--text-dark);
-    }
-
-    body.light .stTextInput > div > div, body.light .stTextArea > div > div {
-        background-color: var(--input-light);
-        color: var(--text-light);
+        background-color: #292b2f;
+        color: white;
     }
 
     .stTextInput > div > div:focus, .stTextArea > div > div:focus {
@@ -48,12 +27,12 @@ st.markdown("""
     }
 
     .stButton > button {
-        background: var(--button-bg);
+        background: rgb(88, 101, 242);
         color: white;
     }
 
     .stButton > button:hover {
-        opacity: var(--button-hover-opacity);
+        opacity: 0.8;
     }
     </style>
     """, unsafe_allow_html=True)
