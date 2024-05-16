@@ -11,7 +11,7 @@ st.markdown("""
     """, unsafe_allow_html=True)
 
 
-st.title("Dismeseg")
+st.set_page_config(page_title="Dismeseg", page_icon=":robot_face:")
 st.write("A simple webhook sender for Discord")
 
 # Bemeneti mezők
